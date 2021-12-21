@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/eventDilog"
+    android:layout_gravity="center"
+    app:layout_constraintCircleRadius="20px"
+    android:requiresFadingEdge="vertical"
+    android:fadingEdge="vertical"
+    android:background="@color/bgBottomNavigation">
+
+
+
+
+    <EditText
+        android:id="@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:background="@drawable/white_shadow"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:hint="@string/type_event"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/seteventtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/notifications"
+            tools:ignore="ContentDescription,HardcodedText"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/eventtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="00:00 AM"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"
+            android:layout_weight="2"
+            />
+        <CheckBox
+            android:id="@+id/alarmme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm Me"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:backgroundTint="@android:color/white"
+        android:text="@string/add_event"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

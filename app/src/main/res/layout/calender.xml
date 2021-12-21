@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/test">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:theme="?attr/actionBarTheme"
+        android:clickable="true"
+        android:outlineSpotShadowColor="@color/design_default_color_surface"
+        android:src="@drawable/back" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:background="@color/white"
+        app:cardUseCompatPadding="true"
+        android:outlineAmbientShadowColor="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="5dp"
+        app:strokeColor="@color/white"
+        app:cardCornerRadius="5dp" >
+
+    <CalendarView
+            android:id= "@+id/calndarView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:layout_gravity="center"
+            android:theme="@style/MyCalendarTheme">
+
+        </CalendarView>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <EditText
+        android:id="@+id/editEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/white_shadow"
+        android:padding="50dp">
+
+    </EditText>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:fontFamily="@font/baloo"
+        android:onClick="InsertDatabase"
+        android:text="Save" />
+
+
+</LinearLayout>

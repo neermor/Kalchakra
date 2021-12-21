@@ -1,0 +1,47 @@
+[{
+  "countries": [{
+    "name": "India",
+    "countryCode": "91",
+    "states": [{
+      "name": "Kerala",
+      "cities": [{
+        "name": "Thrissur",
+        "code": "680111"
+      }, {
+        "name": "Kochi",
+        "code": "680222"
+      }, {
+        "name": "Trivandrum",
+        "code": "680333"
+      }]
+    }, {
+      "name": "TamilNadu",
+      "cities": [{
+        "name": "Chennai",
+        "code": "380111"
+      }, {
+        "name": "Coimbatore",
+        "code": "380222"
+      }]
+    }]
+  }, {
+    "name": "Germany",
+    "countryCode": "49",
+    "states": [{
+      "name": "Bayern",
+      "cities": [{
+        "name": "Nurnburg",
+        "code": "123"
+      }, {
+        "name": "Munich",
+        "code": "125"
+      }]
+    }, {
+      "name": "Berlin",
+      "cities": [{
+        "name": "Berlin",
+        "code": "223"
+      }]
+    }]
+  }]
+}]

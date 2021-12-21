@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Country">"Country "</string>
+    <string name="State">State</string>
+    <string name="REGISTRATION">Registration</string>
+    <string name="Send">send</string>
+    <string name="Kalchakra">kalchakra</string>
+    <string name="calculate_your_days_on_earth">Calculate your days on earth</string>
+    <string name="text">Your Age is :</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="activity">Activity</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+</resources>

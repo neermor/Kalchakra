@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.widget.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbars="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/location"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:stateListAnimator="@anim/scale_down"
+            android:drawableLeft="@drawable/ic_baseline_gps_fixed_24"
+            android:clickable="true"
+            android:outlineAmbientShadowColor="@color/white"
+            android:backgroundTint="@android:color/white"
+            android:text="GET MY CURRENT LOCATION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true" />
+
+         <com.google.android.material.checkbox.MaterialCheckBox
+             android:id="@+id/show_spinner"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+              android:text= "@string/set_location_manually"
+             android:textStyle="bold"
+             android:fontFamily="@font/baloo"
+             android:textFontWeight="1"
+             android:shadowColor="@color/white"
+             android:textColor="#ffffff"
+             android:textSize="30dp"
+             android:layout_marginLeft="15dp"
+             android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/textmanul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="@string/it_s_amazing_to_set_location_manually"
+            android:textSize="30dp"
+            android:textColor="#FFF"
+            android:fontFamily="@font/baloo"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/gps_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/country"
+            android:layout_width="250dp"
+            android:shadowColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_shadow"
+            android:layout_marginStart="20dp"
+            android:hint="@string/Country"
+            android:textColorHint="@color/black"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:shadowRadius="1"
+            android:textColor="#1655de" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/State"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_shadow"
+            android:layout_marginStart="20dp"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:hint="@string/State"
+            android:textColorHint="@color/black"
+            android:shadowRadius="5"
+            android:textColor="#1655de" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/City"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_shadow"
+            android:layout_marginStart="20dp"
+            android:hint="@string/City"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:shadowRadius="1"
+            android:textColorHint="@color/black"
+            android:textColor="#1655de" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/city_state_country"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_shadow"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="10dp"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            android:shadowRadius="1"
+            android:paddingTop="500dp"
+            android:textColor="#ffff" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/state_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_shadow"
+            android:layout_marginStart="20dp"
+            android:hint="@string/Country"
+            android:drawablePadding="10dp"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            android:shadowRadius="1"
+            android:paddingTop="500dp"
+            android:textColor="#ffff" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_shadow"
+            android:layout_marginStart="20dp"
+            android:hint="@string/Country"
+            android:drawablePadding="10dp"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            android:shadowRadius="1"
+            android:paddingTop="500dp"
+            android:textColor="#ffff" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dob"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/white_shadow"
+            android:cursorVisible="false"
+            android:drawableEnd="@drawable/birthday"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center"
+            android:hint="@string/when_we_can_celebrate_your_birthday"
+            android:padding="15dp"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textColor="#1655de" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/expected_age"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:shadowColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/white_shadow"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/baloo"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:hint="Your expected date"
+            android:layout_margin="20dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+             />
+
+
+
+        <Button
+            android:id="@+id/look_next"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="10dp"
+            android:padding="16dp"
+            android:text="@string/calculate_your_days_on_earth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</android.widget.ScrollView>

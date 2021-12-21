@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/test"
+    tools:context=".city_state_spiner">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="Please Choose City State Country manually "
+        android:textSize="30dp"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold">
+    </TextView>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="10dp"
+        android:padding="25dp"
+        android:layout_margin="20dp"
+        android:shadowRadius="1"
+        android:paddingTop="500dp"
+        android:textColor="#ffff" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_marginStart="20dp"
+        android:hint="@string/Country"
+        android:drawablePadding="10dp"
+        android:padding="25dp"
+        android:layout_margin="20dp"
+        android:shadowRadius="1"
+        android:paddingTop="500dp"
+        android:textColor="#ffff" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_marginStart="20dp"
+        android:hint="@string/Country"
+        android:drawablePadding="10dp"
+        android:padding="25dp"
+        android:layout_margin="20dp"
+        android:shadowRadius="1"
+        android:paddingTop="500dp"
+        android:textColor="#ffff" />
+
+
+
+
+
+</LinearLayout>
